@@ -17,7 +17,7 @@ This repository is the official implementation of the paper["**YOLO-MousePose: I
 ## Result
 
 <p align="center">
-<img src="utils/figures/result1.png" width="40%">           <img src="utils/figures/result2.png" width="40%">
+<img src="utils/figures/result1.png" width="70%">           <img src="utils/figures/result2.png" width="40%">
 </p>
 
 ## Requirements
