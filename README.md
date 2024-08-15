@@ -5,6 +5,9 @@ This repository is the official implementation of the paper["**YOLO-MousePose: I
 <p align="center">
 <img src="utils/figures/overview.png" width="80%">
 </p>
+<p align="center">
+<img src="utils/figures/FCSE Module.png" width="60%">
+</p>
 
 ## Demo
 
