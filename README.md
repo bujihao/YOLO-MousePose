@@ -3,7 +3,7 @@ This repository is the official implementation of the paper["**YOLO-MousePose: I
 
 
 <p align="center">
-<img src="utils/figures/overview.tif" width="80%">
+<img src="utils/figures/overview.png" width="80%">
 </p>
 
 ## Demo
