@@ -62,15 +62,8 @@ data
 ```
 ## Training
 
-* Before running `train.py`, we need to compile Directionmax operation used in our paper, which is inspired by the corner pooling scheme in [CornerNet](https://github.com/princeton-vl/CornerNet).
-```
-`cd <CornerNet dir>/models/py_utils/_cpools/`
-`python setup.py install --user`
-```
-* Then train the model
-```
-`python train.py`
-```
+
+
 
 
 
