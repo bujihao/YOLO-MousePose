@@ -75,7 +75,7 @@ data
 |      val.txt
 
 ```
-## **Training: YOLO-MousePose**
+## **Training 、 Testing and Detecting: YOLO-MousePose**
 Train a suitable model by running the following commands and using the pre-trained model.
 
 ```
@@ -85,7 +85,18 @@ python train.py --data mouse_kpts.yaml --cfg YOLO-MousePose-T.yaml --weights 'pa
                                        --cfg YOLO-MousePose-L.yaml 
 ```
 
+Run the following command to replicate the accuracy number on the pretrained checkpoints:
 
+```
+python test.py --data mouse_kpts.yaml --img 640 --conf 0.001 --iou 0.65 --weights "path to the pre-trained ckpt" --kpt-label
+
+```
+Run the following command to detect images or videos:
+
+```
+python detect.py --img-size 640 640 --source "path to images or videos" --weights "path to the pre-trained ckpt" --kpt-label
+
+```
 
 
 
