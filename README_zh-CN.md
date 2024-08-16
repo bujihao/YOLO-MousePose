@@ -96,14 +96,6 @@ python test.py --data mouse_kpts.yaml --img 640 --conf 0.001 --iou 0.65 --weight
 python detect.py --img-size 640 640 --source "path to images or videos" --weights "path to the pre-trained ckpt" --kpt-label
 
 ```
-## **Training: YOLO-MousePose**
-通过运行以下命令并使用预训练模型，训练一个合适的模型。
-```
-python train.py --data mouse_kpts.yaml --cfg YOLO-MousePose-T.yaml --weights 'path to the pre-trained ckpts' --adamW --batch-size 16 --img 640 --kpt-label --cache-images
-                                       --cfg YOLO-MousePose-S.yaml 
-                                       --cfg YOLO-MousePose-M.yaml
-                                       --cfg YOLO-MousePose-L.yaml 
-```
 
 
 
