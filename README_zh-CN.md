@@ -17,11 +17,11 @@
 </p>
 
 ## Result
-YOLO-MousePose
+YOLO-MousePose即使面对小鼠直立、蜷缩和低头等复杂姿态，仍能准确识别出关键点的物理属性，并精确定位实验鼠的关键点位置。
 <p align="center">
 <img src="utils/figures/result1.png" width="80%">  
 </p>
-
+与其他最先进的方法相比，我们提出的YOLO-MousePose实现了效率和准确性的统一。
 <p align="center">
 <img src="utils/figures/result2.png" width="85%">
 </p>
