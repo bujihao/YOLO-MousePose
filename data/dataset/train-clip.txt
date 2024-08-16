@@ -1,0 +1,4 @@
+data\dataset\images\labeled-data\cross\cross0001.png
+data\dataset\images\labeled-data\circle\circle0001.png
+data\dataset\images\labeled-data\darkcross\darkcross0001.png
+data\dataset\images\labeled-data\rec\rec0001.png
