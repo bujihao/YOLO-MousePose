@@ -75,7 +75,7 @@ data
 |      val.txt
 
 ```
-## **Training 、 Testing and Detecting: YOLO-MousePose**
+## **Training 、Testing and Detecting: YOLO-MousePose**
 Train a suitable model by running the following commands and using the pre-trained model.
 
 ```
