@@ -22,7 +22,7 @@ YOLO-MousePose can accurately identify the physical properties of the keypoints 
 <p align="center">
 <img src="utils/figures/result1.png" width="80%">   
 </p>
-Compared with other state-of-the-art methods, our proposed YOLO-MousePose achieves the unity of efficiency and accuracy.
+Compared with other state-of-the-art methods, our proposed YOLO-MousePose achieves a balance of efficiency and accuracy.
 <p align="center">
 <img src="utils/figures/result2.png" width="83%">
 </p>
