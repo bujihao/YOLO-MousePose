@@ -19,7 +19,7 @@
 <img src="utils/figures/test1.gif" width="40%">            <img src="utils/figures/test18.gif" width="40%"> 
 </p>
 <p align="center">
-<img src="utils/figures/test5.gif" width="40%">           <img src="utils/figures/test13.gif" width="40%">
+<img src="utils/figures/test6.gif" width="40%">           <img src="utils/figures/test13.gif" width="40%">
 </p>
 
 ## Result
