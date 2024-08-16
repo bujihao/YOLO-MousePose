@@ -1,6 +1,7 @@
 # YOLO-MousePose: Mouse Pose estimation model
-This repository is the official implementation of the paper["**YOLO-MousePose: Improved YOLO-Pose forMouse Pose Estimation from a Top-down View**"].
 
+## Introduction
+This repository is the official implementation of the paper["**YOLO-MousePose: Improved YOLO-Pose forMouse Pose Estimation from a Top-down View**"].YOLO-MousePose is an open-source deep learning model for mouse pose estimation based on PyTorch. It serves as a successful example of transplanting [YOLO-Pose](https://github.com/TexasInstruments/edgeai-yolov5/tree/yolo-pose) into the domain of mouse pose estimation. By incorporating the FCSE (Fusion Channel Specialized Encoder) module into the neck architecture and refining the loss function, YOLO-MousePose effectively addresses the challenges of slow training convergence and low final accuracy typically encountered during the transplantation process.
 
 <p align="center">
 <img src="utils/figures/overview.png" width="100%">
