@@ -18,11 +18,14 @@ This repository is the official implementation of the paper "**YOLO-MousePose: I
 </p>
 
 ## Result
-
+YOLO-MousePose can accurately identify the physical properties of the keypoints and accurately locate the keypoints of the mouse even in the face of complex poses such as rear (a), bowed (b) and crouched (d), and the body parts are covered (c).
 <p align="center">
-<img src="utils/figures/result1.png" width="80%">           <img src="utils/figures/result2.png" width="80%">
+<img src="utils/figures/result1.png" width="80%">   
 </p>
-
+Compared with other state-of-the-art methods, our proposed YOLO-MousePose achieves the unity of efficiency and accuracy.
+<p align="center">
+<img src="utils/figures/result2.png" width="83%">
+</p>
 ## Requirements
 
 * PyTorch>=1.7.0
