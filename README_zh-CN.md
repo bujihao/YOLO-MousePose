@@ -25,6 +25,7 @@ YOLO-MousePose
 <p align="center">
 <img src="utils/figures/result2.png" width="85%">
 </p>
+
 ## Requirements
 
 * PyTorch>=1.7.0
