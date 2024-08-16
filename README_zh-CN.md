@@ -3,7 +3,7 @@
 ## Introduction
 [English](/README.md) | 简体中文
 
-这个库是 "**YOLO-MousePose: Improved YOLO-Pose forMouse Pose Estimation from a Top-down View**"这篇论文的正式实现.YOLO-MousePose 是一款基于 PyTorch 的开源深度学习模型，专用于小鼠姿态估计。它是将[YOLO-Pose](https://github.com/TexasInstruments/edgeai-yolov5/tree/yolo-pose)移植到小鼠姿态估计领域的成功范例。通过将 neck 部分修改为 FCSE（Fusion Channel Specialized Encoder）模块，并优化损失函数，YOLO-MousePose 有效克服了移植过程中常见的训练收敛速度慢和最终精度低的问题。此外，我们构建了一个包含14586张带有标注的单只小鼠图片的数据集，这个数据集将在论文审稿完毕后开源。
+这个库是 "**YOLO-MousePose: Improved YOLO-Pose forMouse Pose Estimation from a Top-down View**"这篇论文的官方实现.YOLO-MousePose 是一款基于 PyTorch 的开源深度学习模型，专用于小鼠姿态估计。它是将[YOLO-Pose](https://github.com/TexasInstruments/edgeai-yolov5/tree/yolo-pose)移植到小鼠姿态估计领域的成功范例。通过将 neck 部分修改为 FCSE（Fusion Channel Specialized Encoder）模块，并优化损失函数，YOLO-MousePose 有效克服了移植过程中常见的训练收敛速度慢和最终精度低的问题。此外，我们构建了一个包含14586张带有标注的单只小鼠图片的数据集，这个数据集将在论文审稿完毕后开源。
 <p align="center">
 <img src="utils/figures/overview.png" width="100%">
 </p>
