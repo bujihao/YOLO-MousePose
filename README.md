@@ -66,7 +66,7 @@ data
 
 ```
 ## **Training: YOLO-MousePose**
-Train a suitable model  by running the following command using a suitable pretrained ckpt from the previous section.
+Train a suitable model by running the following commands and using the pre-trained model.
 
 ```
 python train.py --data mouse_kpts.yaml --cfg YOLO-MousePose-T.yaml --weights 'path to the pre-trained ckpts' --adamW --batch-size 16 --img 640 --kpt-label --cache-images
