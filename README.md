@@ -79,7 +79,7 @@ data
 Train a suitable model by running the following commands and using the pre-trained model.
 
 ```
-python train.py --data mouse_kpts.yaml --cfg YOLO-MousePose-T.yaml --adamW --batch-size 16 --img 640  --kpt-label --weights 'path to the pre-trained ckpts' --cache-images
+python train.py --data mouse_kpts.yaml --cfg YOLO-MousePose-T.yaml --adamW --batch-size 16 --img 640  --kpt-label --cache-images --weights 'path to the pre-trained ckpts' 
                                        --cfg YOLO-MousePose-S.yaml 
                                        --cfg YOLO-MousePose-M.yaml
                                        --cfg YOLO-MousePose-L.yaml 
