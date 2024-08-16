@@ -23,7 +23,7 @@ YOLO-MousePose即使面对小鼠直立(a)、低头(b)和蜷缩(d)等复杂姿态
 </p>
 与其他最先进的方法相比，我们提出的YOLO-MousePose实现了效率和准确性的统一。
 <p align="center">
-<img src="utils/figures/result2.png" width="90%">
+<img src="utils/figures/result2.png" width="85%">
 </p>
 
 ## Requirements
