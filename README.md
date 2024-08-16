@@ -12,16 +12,16 @@ This repository is the official implementation of the paper "**YOLO-MousePose: I
 
 
 ## Demo
-
+<p align="center">
+<img src="utils/figures/test23.gif" width="40%">           <img src="utils/figures/test5.gif" width="40%">
+</p>
 <p align="center">
 <img src="utils/figures/test1.gif" width="40%">           <img src="utils/figures/test16.gif" width="40%">
 </p>
 <p align="center">
-<img src="utils/figures/test18.gif" width="40%">           <img src="utils/figures/test13.gif" width="40%">
+<img src="utils/figures/test18.gif" width="40%">           <img src="utils/figures/test13.gif" width="35%">
 </p>
-<p align="center">
-<img src="utils/figures/test23.gif" width="40%">           <img src="utils/figures/test4.gif" width="40%">
-</p>
+
 
 ## Result
 YOLO-MousePose can accurately identify the physical properties of the keypoints and accurately locate the keypoints of the mouse even in the face of complex poses such as rear (a), bowed (b) and crouched (d), and the body parts are covered (c).
