@@ -35,7 +35,7 @@ This repository is the official implementation of the paper "**YOLO-MousePose: I
 * pycocotools>=2.0
 
 ## Data Preparation
-The dataset needs to be prepared in YOLO format so that the dataloader can be enhanced to read the keypoints along with the bounding box informations. labelme2yolo_keypoints.py in this repository can convert the labelme annotated json file into a dataset in the required format.And our self-built dataset will be open sourced after the paper is reviewed.
+The dataset needs to be prepared in YOLO format so that the dataloader can be enhanced to read the keypoints along with the bounding box informations. [labelme2yolo_keypoints.py](data/dataset/labelme2yolo_keypoints.py) in this repository can convert the labelme annotated json file into a dataset in the required format.And our self-built dataset will be open sourced after the paper is reviewed.
 
 Expected directoys structure:
 
