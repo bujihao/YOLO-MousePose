@@ -1,0 +1,2 @@
+data\dataset\images\labeled-data\Triangle\Triangle0001.png
+data\dataset\images\labeled-data\circle\bluecross0001.png
