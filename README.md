@@ -26,6 +26,7 @@ Compared with other state-of-the-art methods, our proposed YOLO-MousePose achiev
 <p align="center">
 <img src="utils/figures/result2.png" width="83%">
 </p>
+
 ## Requirements
 
 * PyTorch>=1.7.0
