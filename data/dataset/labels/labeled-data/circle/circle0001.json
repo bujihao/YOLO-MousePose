@@ -1,0 +1,110 @@
+{
+    "version": "5.1.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "mouse_rect",
+            "points": [
+                [
+                    321.565,
+                    85.9922
+                ],
+                [
+                    342.519,
+                    111.27
+                ]
+            ],
+            "group_id": null,
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "0",
+            "points": [
+                [
+                    326.531,
+                    107.859
+                ]
+            ],
+            "group_id": null,
+            "shape_type": "point",
+            "flags": {}
+        },
+        {
+            "label": "1",
+            "points": [
+                [
+                    325.969,
+                    102.516
+                ]
+            ],
+            "group_id": null,
+            "shape_type": "point",
+            "flags": {}
+        },
+        {
+            "label": "2",
+            "points": [
+                [
+                    331.594,
+                    91.6875
+                ]
+            ],
+            "group_id": null,
+            "shape_type": "point",
+            "flags": {}
+        },
+        {
+            "label": "3",
+            "points": [
+                [
+                    338.062,
+                    90.1406
+                ]
+            ],
+            "group_id": null,
+            "shape_type": "point",
+            "flags": {}
+        },
+        {
+            "label": "4",
+            "points": [
+                [
+                    338.625,
+                    96.4688
+                ]
+            ],
+            "group_id": null,
+            "shape_type": "point",
+            "flags": {}
+        },
+        {
+            "label": "5",
+            "points": [
+                [
+                    330.188,
+                    103.922
+                ]
+            ],
+            "group_id": null,
+            "shape_type": "point",
+            "flags": {}
+        },
+        {
+            "label": "6",
+            "points": [
+                [
+                    331.875,
+                    97.7344
+                ]
+            ],
+            "group_id": null,
+            "shape_type": "point",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\..\\imgs\\circle\\circle0001.png",
+    "imageData": null,
+    "imageHeight": 576,
+    "imageWidth": 720
+}

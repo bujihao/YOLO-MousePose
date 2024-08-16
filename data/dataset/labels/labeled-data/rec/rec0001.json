@@ -1,0 +1,180 @@
+{
+    "version": "5.1.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "mouse_rect",
+            "points": [
+                [
+                    578.5973763874873,
+                    488.6
+                ],
+                [
+                    627.2,
+                    517.840565085772
+                ]
+            ],
+            "group_id": null,
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "line_color": null,
+            "fill_color": null,
+            "label": "segmatation",
+            "points": [
+                [
+                    622.5,
+                    488.6
+                ],
+                [
+                    619.1,
+                    489.0
+                ],
+                [
+                    615.6,
+                    489.5
+                ],
+                [
+                    610.0,
+                    491.0
+                ],
+                [
+                    588.0,
+                    506.0
+                ],
+                [
+                    578.5973763874873,
+                    516.3269424823411
+                ],
+                [
+                    597.5681130171542,
+                    517.840565085772
+                ],
+                [
+                    613.0,
+                    509.0
+                ],
+                [
+                    627.2,
+                    498.5
+                ],
+                [
+                    625.2,
+                    495.2
+                ],
+                [
+                    624.1,
+                    493.0
+                ],
+                [
+                    623.8,
+                    489.5
+                ]
+            ],
+            "group_id": null,
+            "shape_type": "polygon",
+            "flags": {}
+        },
+        {
+            "label": "0",
+            "points": [
+                [
+                    580.88,
+                    514.804
+                ]
+            ],
+            "group_id": null,
+            "shape_type": "point",
+            "flags": {}
+        },
+        {
+            "label": "1",
+            "points": [
+                [
+                    586.770938446014,
+                    508.35519677093845
+                ]
+            ],
+            "group_id": null,
+            "shape_type": "point",
+            "flags": {}
+        },
+        {
+            "label": "2",
+            "points": [
+                [
+                    609.7,
+                    491.39200000000005
+                ]
+            ],
+            "group_id": null,
+            "shape_type": "point",
+            "flags": {}
+        },
+        {
+            "label": "3",
+            "points": [
+                [
+                    623.1,
+                    489.7
+                ]
+            ],
+            "group_id": null,
+            "shape_type": "point",
+            "flags": {}
+        },
+        {
+            "label": "4",
+            "points": [
+                [
+                    625.4,
+                    499.0
+                ]
+            ],
+            "group_id": null,
+            "shape_type": "point",
+            "flags": {}
+        },
+        {
+            "label": "5",
+            "points": [
+                [
+                    589.7981836528758,
+                    516.5287588294652
+                ]
+            ],
+            "group_id": null,
+            "shape_type": "point",
+            "flags": {}
+        },
+        {
+            "label": "6",
+            "points": [
+                [
+                    605.7416750756811,
+                    505.1261352169526
+                ]
+            ],
+            "group_id": null,
+            "shape_type": "point",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\..\\..\\images\\labeled-data\\rec\\rec0001.png",
+    "imageData": null,
+    "imageHeight": 960,
+    "imageWidth": 1280,
+    "lineColor": [
+        0,
+        255,
+        0,
+        128
+    ],
+    "fillColor": [
+        255,
+        0,
+        0,
+        128
+    ]
+}

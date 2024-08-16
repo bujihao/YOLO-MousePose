@@ -1,0 +1,180 @@
+{
+    "version": "5.1.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "mouse_rect",
+            "points": [
+                [
+                    317.67857142857144,
+                    217.67857142857144
+                ],
+                [
+                    333.75,
+                    262.3214285714286
+                ]
+            ],
+            "group_id": null,
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "line_color": null,
+            "fill_color": null,
+            "label": "segmatation",
+            "points": [
+                [
+                    326.9642857142857,
+                    217.67857142857144
+                ],
+                [
+                    321.6071428571429,
+                    221.6071428571429
+                ],
+                [
+                    317.7,
+                    226.5
+                ],
+                [
+                    318.39285714285717,
+                    245.17857142857144
+                ],
+                [
+                    324.4642857142857,
+                    254.10714285714286
+                ],
+                [
+                    330.17857142857144,
+                    262.3214285714286
+                ],
+                [
+                    331.9642857142857,
+                    257.67857142857144
+                ],
+                [
+                    333.39285714285717,
+                    249.46428571428572
+                ],
+                [
+                    331.6071428571429,
+                    243.0357142857143
+                ],
+                [
+                    332.32142857142856,
+                    237.67857142857144
+                ],
+                [
+                    333.75,
+                    231.96428571428572
+                ],
+                [
+                    331.6071428571429,
+                    226.25000000000003
+                ]
+            ],
+            "group_id": null,
+            "shape_type": "polygon",
+            "flags": {}
+        },
+        {
+            "label": "0",
+            "points": [
+                [
+                    330.2,
+                    262.1
+                ]
+            ],
+            "group_id": null,
+            "shape_type": "point",
+            "flags": {}
+        },
+        {
+            "label": "1",
+            "points": [
+                [
+                    324.2,
+                    253.7
+                ]
+            ],
+            "group_id": null,
+            "shape_type": "point",
+            "flags": {}
+        },
+        {
+            "label": "2",
+            "points": [
+                [
+                    318.1,
+                    226.8
+                ]
+            ],
+            "group_id": null,
+            "shape_type": "point",
+            "flags": {}
+        },
+        {
+            "label": "3",
+            "points": [
+                [
+                    326.9,
+                    219.7
+                ]
+            ],
+            "group_id": null,
+            "shape_type": "point",
+            "flags": {}
+        },
+        {
+            "label": "4",
+            "points": [
+                [
+                    332.6,
+                    233.8
+                ]
+            ],
+            "group_id": null,
+            "shape_type": "point",
+            "flags": {}
+        },
+        {
+            "label": "5",
+            "points": [
+                [
+                    331.5,
+                    252.1
+                ]
+            ],
+            "group_id": null,
+            "shape_type": "point",
+            "flags": {}
+        },
+        {
+            "label": "6",
+            "points": [
+                [
+                    324.958,
+                    236.18400000000003
+                ]
+            ],
+            "group_id": null,
+            "shape_type": "point",
+            "flags": {}
+        }
+    ],
+    "imagePath": "..\\..\\..\\images\\labeled-data\\cross\\cross0001.png",
+    "imageData": null,
+    "imageHeight": 480,
+    "imageWidth": 640,
+    "lineColor": [
+        0,
+        255,
+        0,
+        128
+    ],
+    "fillColor": [
+        255,
+        0,
+        0,
+        128
+    ]
+}

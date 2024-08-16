@@ -1,0 +1,126 @@
+{
+    "version": "5.4.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "mouse_rect",
+            "points": [
+                [
+                    222.93715846994536,
+                    212.5409836065574
+                ],
+                [
+                    271.70765027322403,
+                    248.19672131147544
+                ]
+            ],
+            "group_id": null,
+            "description": null,
+            "shape_type": "rectangle",
+            "flags": {},
+            "mask": null
+        },
+        {
+            "label": "0",
+            "points": [
+                [
+                    227.375,
+                    218.75
+                ]
+            ],
+            "group_id": null,
+            "description": null,
+            "shape_type": "point",
+            "flags": {},
+            "mask": null
+        },
+        {
+            "label": "1",
+            "points": [
+                [
+                    236.6,
+                    217.9
+                ]
+            ],
+            "group_id": null,
+            "description": null,
+            "shape_type": "point",
+            "flags": {},
+            "mask": null
+        },
+        {
+            "label": "2",
+            "points": [
+                [
+                    260.5,
+                    225.2
+                ]
+            ],
+            "group_id": null,
+            "description": null,
+            "shape_type": "point",
+            "flags": {},
+            "mask": null
+        },
+        {
+            "label": "3",
+            "points": [
+                [
+                    267.6,
+                    241.7
+                ]
+            ],
+            "group_id": null,
+            "description": null,
+            "shape_type": "point",
+            "flags": {},
+            "mask": null
+        },
+        {
+            "label": "4",
+            "points": [
+                [
+                    251.3,
+                    245.5
+                ]
+            ],
+            "group_id": null,
+            "description": null,
+            "shape_type": "point",
+            "flags": {},
+            "mask": null
+        },
+        {
+            "label": "5",
+            "points": [
+                [
+                    230.7,
+                    226.9
+                ]
+            ],
+            "group_id": null,
+            "description": null,
+            "shape_type": "point",
+            "flags": {},
+            "mask": null
+        },
+        {
+            "label": "6",
+            "points": [
+                [
+                    250.25,
+                    230.5
+                ]
+            ],
+            "group_id": null,
+            "description": null,
+            "shape_type": "point",
+            "flags": {},
+            "mask": null
+        }
+    ],
+    "imagePath": "..\\..\\..\\images\\labeled-data\\darkcross\\darkcross0001.png",
+    "imageData": null,
+    "imageHeight": 480,
+    "imageWidth": 640
+}

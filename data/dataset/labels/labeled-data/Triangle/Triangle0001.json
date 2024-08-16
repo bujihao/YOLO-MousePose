@@ -1,0 +1,126 @@
+{
+    "version": "5.4.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "mouse_rect",
+            "points": [
+                [
+                    348.525,
+                    317.456
+                ],
+                [
+                    443.025,
+                    386.494
+                ]
+            ],
+            "group_id": null,
+            "description": null,
+            "shape_type": "rectangle",
+            "flags": {},
+            "mask": null
+        },
+        {
+            "label": "0",
+            "points": [
+                [
+                    352.67175572519085,
+                    326.0814249363868
+                ]
+            ],
+            "group_id": null,
+            "description": null,
+            "shape_type": "point",
+            "flags": {},
+            "mask": null
+        },
+        {
+            "label": "1",
+            "points": [
+                [
+                    376.2086513994911,
+                    323.66412213740455
+                ]
+            ],
+            "group_id": null,
+            "description": null,
+            "shape_type": "point",
+            "flags": {},
+            "mask": null
+        },
+        {
+            "label": "2",
+            "points": [
+                [
+                    430.0254452926209,
+                    353.0534351145038
+                ]
+            ],
+            "group_id": null,
+            "description": null,
+            "shape_type": "point",
+            "flags": {},
+            "mask": null
+        },
+        {
+            "label": "3",
+            "points": [
+                [
+                    433.8422391857506,
+                    376.8447837150127
+                ]
+            ],
+            "group_id": null,
+            "description": null,
+            "shape_type": "point",
+            "flags": {},
+            "mask": null
+        },
+        {
+            "label": "4",
+            "points": [
+                [
+                    403.30788804071244,
+                    378.7531806615776
+                ]
+            ],
+            "group_id": null,
+            "description": null,
+            "shape_type": "point",
+            "flags": {},
+            "mask": null
+        },
+        {
+            "label": "5",
+            "points": [
+                [
+                    369.0,
+                    344.1
+                ]
+            ],
+            "group_id": null,
+            "description": null,
+            "shape_type": "point",
+            "flags": {},
+            "mask": null
+        },
+        {
+            "label": "6",
+            "points": [
+                [
+                    400.5,
+                    349.8
+                ]
+            ],
+            "group_id": null,
+            "description": null,
+            "shape_type": "point",
+            "flags": {},
+            "mask": null
+        }
+    ],
+    "imagePath": "..\\..\\imgs\\Triangle\\Triangle0001.png",
+    "imageData": null,
+    "imageHeight": 576,
+    "imageWidth": 768
+}
