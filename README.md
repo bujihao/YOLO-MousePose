@@ -3,9 +3,10 @@
 ## Introduction
 English | [简体中文](/README_zh-CN.md)
 
-This repository is the official implementation of the paper "**YOLO-MousePose: Improved YOLO-Pose forMouse Pose Estimation from a Top-down View**". which has been submitted to the IEEE TRANSACTIONS ON INSTRUMENTATION AND MEASUREMENT journal. YOLO-MousePose is an open-source deep learning model for mouse pose estimation based on PyTorch. It serves as a successful example of transplanting [YOLO-Pose](https://github.com/TexasInstruments/edgeai-yolov5/tree/yolo-pose) into the domain of mouse pose estimation. By incorporating our custom-designed FCSE (Fusion Channel Specialized Encoder) module into the neck architecture and refining the loss function, YOLO-MousePose effectively addresses the challenges of slow training convergence and low final accuracy typically encountered during the transplantation process. 
+This repository is the official implementation of the paper "**[YOLO-MousePose: Improved YOLO-Pose forMouse Pose Estimation from a Top-down View](https://ieeexplore.ieee.org/document/10929680)**". which has been accepted by the IEEE TRANSACTIONS ON INSTRUMENTATION AND MEASUREMENT journal. YOLO-MousePose is an open-source deep learning model for mouse pose estimation based on PyTorch. It serves as a successful example of transplanting [YOLO-Pose](https://github.com/TexasInstruments/edgeai-yolov5/tree/yolo-pose) into the domain of mouse pose estimation. By incorporating our custom-designed FCSE (Fusion Channel Specialized Encoder) module into the neck architecture and refining the loss function, YOLO-MousePose effectively addresses the challenges of slow training convergence and low final accuracy typically encountered during the transplantation process. 
 
-In addition, we have built a dataset containing 14,586 annotated single mouse images, which will be open sourced in this repository after the paper is reviewed.
+The relevant dataset is the Mouse Pose Dataset from Open-Field Test (MPD-OFT). A brief introduction to the dataset is available at https://bujihao.github.io/. Due to GitHub storage limitations, please contact 540083559@qq.com or yumingxin@bistu.edu.cn to obtain the dataset. Once acquired, simply extract and place it in the data/dataset directory.
+
 
 <p align="center">
 <img src="utils/figures/overview.png" width="100%">

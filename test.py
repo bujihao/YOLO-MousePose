@@ -104,14 +104,14 @@ def test(data,
     names = {k: v for k, v in enumerate(model.names if hasattr(model, 'names') else model.module.names)}
     coco91class = coco80_to_coco91_class()
     s = ('%20s' + '%12s' * 26) % (
-    'Class', 'Images', 'Labels', 'P', 'R', 'mAP@.5','mAP@.75','mAP@.9', 'mAP@.5:.95', 'mse', 
+    'Class', 'Images', 'Labels', 'P', 'R', 'mAP@.5','mAP@.75','mAP@.9', 'mAP@.5:.95', 'mae',
     'pckN', 'pckRE', 'pckRL', 'pckT', 'pckLL', 'pckLE', 'pckB',
     'pck0.02', 'pck0.04', 'pck0.06', 'pck0.08', 'pck0.1', 'pck0.12', 'pck0.14', 'pck0.16','pck0.18', 'pck0.2')
     p, r, f1, mp, mr, map50,map75,map90, map, t0, t1 = 0., 0.,0.,0., 0., 0., 0., 0., 0., 0., 0.
     loss = torch.zeros(5, device=device)
     jdict, stats, ap, ap_class, wandb_images = [], [], [], [], []
     #jdict_kpt = [] if kpt_label else None
-    pt_mse = torch.zeros([7]).to(device)
+    pt_mae = torch.zeros([7]).to(device)
     pckh = 0.
     pt_num = 0
     pcky_Nnum = pcky_REnum = pcky_RLnum = pcky_Tnum = pcky_LLnum = pcky_LEnum = pcky_Bnum = 0
@@ -272,7 +272,7 @@ def test(data,
                                     tyy = tkpt[i[j], 1::2].to(device)
                                     txyi = torch.bitwise_not(torch.bitwise_and(txx == 0, tyy == 0))
                                     
-                                    mse = (torch.sqrt((pxx - txx) ** 2 + (pyy - tyy) ** 2) * txyi).mean(0)
+                                    mae = (torch.sqrt((pxx - txx) ** 2 + (pyy - tyy) ** 2) * txyi).mean(0)
                                     #The hypotenuse of the groundtruth box is used as the Body length
                                     whole_dist = torch.sqrt(
                                         (tbox[0, 0] - tbox[0, 2]) ** 2 + (tbox[0, 1] - tbox[0, 3]) ** 2)
@@ -315,10 +315,10 @@ def test(data,
                                     pcky18_num += torch.sum(torch.logical_and(pck < 0.18, pck > 0)).item()
                                     pckn20_num += torch.sum(torch.logical_and(pck >= 0.20, pck > 0)).item()
                                     pcky20_num += torch.sum(torch.logical_and(pck < 0.20, pck > 0)).item()
-                                    pt_mse += mse
-                                    # pt_mse += (torch.sqrt((pyy - tyy) ** 2) * txyi).mean(0)
+                                    pt_mae += mae
+                                    # pt_mae += (torch.sqrt((pyy - tyy) ** 2) * txyi).mean(0)
                                     # vv = txyi[:, [0, 6]]
-                                    # pt_mse += (torch.sqrt((pxx - txx) ** 2 + (pyy - tyy) ** 2) * txyi)[:, [0, 6]].mean()  # 2 point mse
+                                    # pt_mae += (torch.sqrt((pxx - txx) ** 2 + (pyy - tyy) ** 2) * txyi)[:, [0, 6]].mean()  # 2 point mae
                                     pt_num += 1
                                 if len(detected) == nl:  # all targets already located in image
                                     break
@@ -349,7 +349,7 @@ def test(data,
     pf = '%20s' + '%12i' * 2 + '%12.3g' * 24
     # pf = '%20s' + '%12i' * 2 + '%12.3g' * 10  # print format
     print(pf % (
-    'all', seen, nt.sum(), mp, mr, map50, map75, map90, map, pt_mse.mean() / pt_num,
+    'all', seen, nt.sum(), mp, mr, map50, map75, map90, map, pt_mae.mean() / pt_num,
     (pcky_Nnum / (pcky_Nnum + pckn_Nnum)), (pcky_REnum / (pcky_REnum + pckn_REnum)),
     (pcky_RLnum / (pcky_RLnum + pckn_RLnum)), (pcky_Tnum / (pcky_Tnum + pckn_Tnum)),
     (pcky_LLnum / (pcky_LLnum + pckn_LLnum)), (pcky_LEnum / (pcky_LEnum + pckn_LEnum)),
@@ -435,7 +435,7 @@ def test(data,
     maps = np.zeros(nc) + map
     for i, c in enumerate(ap_class):
         maps[c] = ap[i]
-    return (mp, mr, map50,map75,map90 ,map, (pt_mse.mean()/pt_num).cpu().tolist(),(pcky_Nnum / (pcky_Nnum + pckn_Nnum)), (pcky_REnum / (pcky_REnum + pckn_REnum)), (pcky_RLnum / (pcky_RLnum + pckn_RLnum)),(pcky_Tnum / (pcky_Tnum + pckn_Tnum)), (pcky_LLnum / (pcky_LLnum + pckn_LLnum)), (pcky_LEnum / (pcky_LEnum + pckn_LEnum)), (pcky_Bnum / (pcky_Bnum + pckn_Bnum)),(pcky02_num / (pcky02_num + pckn02_num)),(pcky04_num / (pcky04_num + pckn04_num)),(pcky06_num / (pcky06_num + pckn06_num)),(pcky08_num / (pcky08_num + pckn08_num)),(pcky10_num / (pcky10_num + pckn10_num)),(pcky12_num / (pcky12_num + pckn12_num)),(pcky14_num / (pcky14_num + pckn14_num)),(pcky16_num / (pcky16_num + pckn16_num)),(pcky18_num / (pcky18_num + pckn18_num)),(pcky20_num / (pcky20_num + pckn20_num)), *((loss.cpu() / len(dataloader)).tolist())), maps, t
+    return (mp, mr, map50,map75,map90 ,map, (pt_mae.mean()/pt_num).cpu().tolist(),(pcky_Nnum / (pcky_Nnum + pckn_Nnum)), (pcky_REnum / (pcky_REnum + pckn_REnum)), (pcky_RLnum / (pcky_RLnum + pckn_RLnum)),(pcky_Tnum / (pcky_Tnum + pckn_Tnum)), (pcky_LLnum / (pcky_LLnum + pckn_LLnum)), (pcky_LEnum / (pcky_LEnum + pckn_LEnum)), (pcky_Bnum / (pcky_Bnum + pckn_Bnum)),(pcky02_num / (pcky02_num + pckn02_num)),(pcky04_num / (pcky04_num + pckn04_num)),(pcky06_num / (pcky06_num + pckn06_num)),(pcky08_num / (pcky08_num + pckn08_num)),(pcky10_num / (pcky10_num + pckn10_num)),(pcky12_num / (pcky12_num + pckn12_num)),(pcky14_num / (pcky14_num + pckn14_num)),(pcky16_num / (pcky16_num + pckn16_num)),(pcky18_num / (pcky18_num + pckn18_num)),(pcky20_num / (pcky20_num + pckn20_num)), *((loss.cpu() / len(dataloader)).tolist())), maps, t
 
 
 if __name__ == '__main__':
