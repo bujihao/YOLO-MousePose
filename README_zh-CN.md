@@ -5,7 +5,7 @@
 
 这个库是 "**[YOLO-MousePose: Improved YOLO-Pose forMouse Pose Estimation from a Top-down View](https://ieeexplore.ieee.org/document/10929680)**"这篇论文的官方实现。该论文已经投稿至IEEE TRANSACTIONS ON INSTRUMENTATION AND MEASUREMENT期刊。YOLO-MousePose 是一款基于 PyTorch 的开源深度学习模型，专用于小鼠姿态估计。它是将[YOLO-Pose](https://github.com/TexasInstruments/edgeai-yolov5/tree/yolo-pose)移植到小鼠姿态估计领域的成功范例。通过将 neck 部分替换为我们设计的 FCSE（Fusion Channel Specialized Encoder）模块，并优化损失函数，YOLO-MousePose 有效克服了移植过程中常见的训练收敛速度慢和最终精度低的问题。
 
-相关数据集是旷场实验中的小鼠姿势数据集 (MPD-OFT)。我所在试验室的 [GitHub 主页](https://iscl-bistu.github.io/)上提供了该数据集的简要概述。由于 GitHub 存储空间限制，请联系 540083559@qq.com 或 yumingxin@bistu.edu.cn 获取数据集。获取后，只需将其解压并放置在 data/dataset 目录中即可。
+相关数据集是旷场实验中的小鼠姿势数据集 (MPD-OFT)。有关数据集的信息以及如何获取它，请访问我们的[数据集主页](https://iscl-bistu.github.io/)。获取后，只需将其解压并放置在 data/dataset 目录中即可。
 <p align="center">
 <img src="utils/figures/overview.png" width="100%">
 </p>
